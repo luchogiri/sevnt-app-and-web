@@ -1,0 +1,48 @@
+/* ----- css reset ---- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong,
+sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, footer,
+header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, figcaption
+{ margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu,nav, section
+{ display: block; } body { line-height: 1; } ol, ul { list-style: none; }
+blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after
+{ content: ''; content: none; } table { border-collapse: collapse; border-spacing: 0;}
+::-webkit-input-placeholder { color: #cccccc; } :-moz-placeholder { color: #cccccc; }
+::-moz-placeholder { color: #cccccc; } :-ms-input-placeholder { color: #cccccc; }
+html { box-sizing: border-box; } *, *:before, *:after { box-sizing: inherit; }
+html, body { height: 100%; color: #ffffff; }
+#react-root { height: 100%; display: flex; }
+
+/* --------------------- */
+/* Ultra Light * @font-face { font-family: "San Francisco"; font-weight: 100; src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff"); } /* */
+/* Light * @font-face { font-family: "San Francisco"; font-weight: 200; src: url("../fonts/sanfranciscotext-light-webfont.woff"); } /* */
+/* Regular * @font-face { font-family: "San Francisco"; font-weight: 400; src: url("../fonts/sanfranciscotext-regular-webfont.woff"); } /* */
+/* Medium * @font-face { font-family: "San Francisco"; font-weight: 500; src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff"); } /* */
+/* Semi Bold * @font-face { font-family: "San Francisco"; font-weight: 600; src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff"); } /* */
+/* Bold * @font-face { font-family: "San Francisco"; font-weight: 700; src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff"); } /* */
+/* { font-family: sans-serif; }*/
+* { font-family: sans-serif; font-weight: 200; }
+p { padding: 2px 0; }
+
+body {
+  background: #a9115f;
+  background: -moz-linear-gradient(-38deg,  #663399 0%, #D11F41 100%);
+  background: -webkit-linear-gradient(-38deg,  #663399 0%, #D11F41 100%);
+  background: linear-gradient(-38deg,  #663399 0%, #D11F41 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#663399', endColorstr='#D11F41',GradientType=1 );
+}
+
+.touchable {
+  cursor: pointer;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s; }
+.touchable:hover { opacity: 0.7 }
+.touchable:active { opacity: 0.3 }
+
+.horizontal-scrollable-items {  -webkit-overflow-scrolling: touch; -ms-overflow-style: none; }
+.horizontal-scrollable-items::-webkit-scrollbar { display: none; }

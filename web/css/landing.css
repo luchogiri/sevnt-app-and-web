@@ -1,0 +1,197 @@
+/* ----- css reset ---- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s,
+samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul,
+li,fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary, time, mark, audio, video
+{ margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align:
+baseline; } article, aside, details, figcaption, figure, footer, header, hgroup, menu,
+nav, section { display: block; } body { line-height: 1;} ol, ul { list-style: none;}
+blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after
+{ content: ''; content: none; } table { border-collapse: collapse; border-spacing: 0;}
+::-webkit-input-placeholder { color: #cccccc; } :-moz-placeholder { color: #cccccc; }
+::-moz-placeholder { color: #cccccc; } :-ms-input-placeholder { color: #cccccc; }
+html { box-sizing: border-box; } *, *:before, *:after { box-sizing: inherit; }
+html, body { height: 100%; font-family: sans-serif; color: #ffffff; }
+/* --------------------- */
+
+
+body {
+  background-image: url('/img/landing-main-bg.jpg');
+  background-color: #725775;
+  background-size: cover;
+}
+
+.wrapper {
+  height: 100%;
+  overflow: auto;
+}
+
+  main {
+    margin: 0 auto;
+    width: 310px;
+    height: 100%;
+    padding-top: 24px;
+  }
+
+  header {
+  }
+    header nav {
+      text-align: center;
+    }
+      header nav a {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 14px;
+      }
+        header nav a img {
+          height: 24px;
+        }
+
+  section {
+    margin-bottom: 48px;
+  }
+    .description {
+      padding-top: 40px;
+      text-align: center;
+    }
+      .description h1 {
+        margin: 0 auto;
+        text-align: center;
+        width: 120px;
+      }
+        .description h1 img {
+          width: 100%;
+        }
+
+      .description h2 {
+        font-size: 18px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        font-weight: 100;
+        line-height: 1.3em;
+      }
+
+      .description form {
+      }
+        .description form label {
+          font-size: 14px;
+          font-weight: 100;
+        }
+
+        .description form .form {
+          margin-top: 8px;
+          background-color: #ffffff;
+          border: 1px solid #dddddd;
+          border-radius: 5px;
+        }
+
+        .description form input {
+          border: none;
+          width: calc(100% - 50px);
+          padding: 12px;
+          font-size: 14px;
+          font-weight: 200;
+          background-color: transparent;
+          outline: none;
+        }
+
+        .description form a {
+          text-decoration: none;
+          color: #511337 !important;
+          display: inline-block;
+          padding: 10px;
+          font-size: 20px;
+        }
+
+        .description form .mce_inline_error {
+          color: #ff0000;
+          padding: 0 10px 4px;
+        }
+
+        .description form .response {
+          padding-top: 10px;
+          padding-right: 20px;
+          line-height: 1.4em;
+          font-size: 14px;
+          color: #eeeeee;
+        }
+
+
+  aside {
+    margin-bottom: 32px;
+  }
+    .devices {
+      text-align: center;
+    }
+      .devices img {
+        width: 100%;
+      }
+
+
+@media only screen and (min-width : 320px) {
+  /*--- Mobile portrait ---*/
+}
+
+@media only screen and (min-width : 480px) {
+  /*--- Mobile landscape ---*/
+  main {
+    width: 460px;
+  }
+}
+
+@media only screen and (min-width : 690px) {
+  /*--- Tablet portrait ---*/
+  main {
+    width: 680px;
+  }
+}
+
+@media only screen and (min-width : 1024px) {
+  /*--- Tablet landscape --- */
+  main {
+    width: 990px;
+  }
+
+    header {
+      margin-bottom: 24px;
+    }
+      header nav {
+        text-align: left;
+      }
+        header nav a img {
+          height: 20px;
+        }
+
+    section {
+      float: left;
+      width: 50%;
+    }
+      section .description {
+        float: right;
+        width: 368px;
+        margin-right: 40px;
+        padding-top: 104px;
+      }
+
+        section .description h2 {
+          margin-top: 32px;
+          margin-bottom: 32px;
+        }
+
+    aside {
+      float: right;
+      width: 50%;
+    }
+      aside .devices {
+        width: 512px;
+        margin-left: 24px;
+      }
+}
+
+@media only screen and (min-width : 1200px) {
+  main {
+    width: 1180px;
+  }
+}
